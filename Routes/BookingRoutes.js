@@ -1,0 +1,10 @@
+const {addBooking,getBookingByHostelId,getBookingByUserId,getAllBookings,getBookingByOwnerId, changeBookingStatus, deleteBooking} = require('../Controllers/BookingController');
+const router = require('express').Router();
+router.post('/add-booking', addBooking);
+router.get('/get-bookings', getAllBookings);
+router.get('/get-bookings-by-hostel/:hostelId', getBookingByHostelId);
+router.get('/get-bookings-by-users/:userId', getBookingByUserId);
+router.get('/get-bookings-by-owner/:ownerId', getBookingByOwnerId);
+router.put('/change-booking-status/:id', changeBookingStatus);
+router.delete('/delete-booking/:id', deleteBooking);
+module.exports = router;

@@ -1,0 +1,14 @@
+# git ignore 
+#   .gitignore
+#   .git/info/exclude
+#   .gitignore_global
+#   .git/config
+#   .gitmodules
+#   .gitattributes
+#   .git/objects/info/pack
+#   .git/objects/pack/pack-*.pack
+
+#node modules
+node_modules/
+npm-debug.log
+yarn-error.log
